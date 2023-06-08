@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".DetailsFilmActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/film_image_imageview"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.052"
+            tools:srcCompat="@tools:sample/avatars" />
+        <TextView
+            tools:text="@tools:sample/full_names"
+            android:layout_marginStart="8dp"
+            android:id="@+id/film_titre_textview"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/film_popularite_textview"
+            android:layout_width="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Note : "/>
+        <TextView
+            tools:text="@tools:sample/full_names"
+            android:layout_marginStart="8dp"
+            android:layout_width="75dp"
+            android:id="@+id/film_popularite_info_textview"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/film_date_textview"
+            android:layout_width="75dp"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Date de sortie : "/>
+        <TextView
+            tools:text="@tools:sample/full_names"
+            android:layout_marginStart="8dp"
+            android:layout_width="75dp"
+            android:id="@+id/film_date_info_textview"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/film_nbr_votant_textview"
+            android:layout_width="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Nombre de votant : "/>
+        <TextView
+            tools:text="@tools:sample/full_names"
+            android:layout_marginStart="8dp"
+            android:layout_width="75dp"
+            android:id="@+id/film_nbr_votant_info_textview"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/film_language_textview"
+            android:layout_width="75dp"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Langue d'origine : "/>
+        <TextView
+            tools:text="@tools:sample/full_names"
+            android:layout_marginStart="8dp"
+            android:layout_width="75dp"
+            android:id="@+id/film_language_info_textview"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/film_description_textview"
+            android:text="Description: "
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/film_description_info_textview"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/film_liste_recommande_textview"
+            android:text="Films recommandés : "
+            />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailsFilmActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_film_reco_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+</LinearLayout>
