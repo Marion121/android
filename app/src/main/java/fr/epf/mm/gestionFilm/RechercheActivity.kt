@@ -78,19 +78,3 @@ class RechercheActivity : AppCompatActivity() {
         recyclerView.setAdapter(adapter)
     }
 }
-
-
-// val films = response.body()
-//Log.d("API1", films)
-// }
-/*
-val listeFilm = service.getFilm(nom).results.map {
-    Log.d("APIII", "${it.original_title}")
-//val listeFilm = FilmService.getFilm(nomFilmEdittext.text).results.map {
-    Film(
-        it.original_title,
-        it.overview
-    )
-}*/
-
-// recyclerView.adapter = FilmAdapter(listeFilm, this@RechercheActivity)

@@ -61,10 +61,8 @@ class DetailsFilmActivity : AppCompatActivity() {
         val descriptionTextview = findViewById<TextView>(R.id.film_description_info_textview)
         val languageTextview = findViewById<TextView>(R.id.film_language_info_textview)
         val budgetTextview = findViewById<TextView>(R.id.film_nbr_votant_info_textview)
-        //val overviewxTextview = findViewById<TextView>(R.id.details_film_overview_textview)
 
-        // lastNameTextview.text = client.lastName
-        titleTextview.text = filmExtra.original_title ?: "Non renseigné"
+        titleTextview.text = filmExtra.original_title
         populariteTextview.text = filmExtra.vote_average.toString()
         dateTextview.text = filmExtra.release_date
         descriptionTextview.text = filmExtra.overview

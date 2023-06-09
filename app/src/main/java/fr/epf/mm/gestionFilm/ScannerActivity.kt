@@ -105,7 +105,6 @@ override fun surfaceCreated(holder: SurfaceHolder) {
 
                 if (response.isSuccessful) {
                     val result = response.body()
-                    //adapter = result?.results?.let { FilmAdapter(it, this@ScannerActivity) }
                     Log.d("APIII", result.toString())
                     val intent = Intent(this@ScannerActivity, DetailsFilmActivity::class.java)
                     intent.putExtra("film_id", result?.id)

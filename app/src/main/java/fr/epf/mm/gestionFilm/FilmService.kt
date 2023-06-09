@@ -11,7 +11,6 @@ interface FilmService {
     companion object {
         const val API_KEY = "1dea036821ae31c07f18a4014fdbaf56"
         const val ACCOUNT_ID = 19867451
-        const val ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZGVhMDM2ODIxYWUzMWMwN2YxOGE0MDE0ZmRiYWY1NiIsInN1YiI6IjY0N2YwZWRhY2Y0YjhiMDBhODc5MWQwMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.782_AKlIv5ZYkuixffIheQZBmGZGcmPj8FfDKNj66w8"
 
     }
 
