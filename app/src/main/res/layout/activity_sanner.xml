@@ -4,84 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:id = "@+id/parentLayoutId"
     android:layout_margin="8dp"
     android:orientation="vertical"
     tools:context=".ScannerActivity">
 
-    <TextView
+    <SurfaceView
+        android:id="@+id/surface_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ok"
-    />
-
-
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ok" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/add_client_gender_radiogroup"
-        android:orientation="horizontal"
-        >
-        <RadioButton
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ok"
-            android:id="@+id/client_gender_man_radiobutton"
-        />
-        <RadioButton
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ok"
-            android:id="@+id/client_gender_woman_radiobutton"
-        />
-    </RadioGroup>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Age" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="28"
-            android:id="@+id/add_client_age_textview" />
-
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:progress="48"
-            android:id="@+id/add_client_age_seekbar"
-            />
-
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Niveau"/>
-
-
-    <Button
-        android:id="@+id/add_client_add_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ok"
-        />
+        android:layout_height="match_parent" />
 
 </LinearLayout>
