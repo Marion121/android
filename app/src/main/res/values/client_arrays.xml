@@ -1,8 +1,0 @@
-<resources>
-
-    <string-array name="levels">
-        <item>Débutant</item>
-        <item>Intermédiaire</item>
-        <item>@string/level_advanced</item>
-    </string-array>
-</resources>

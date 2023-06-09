@@ -1,12 +1,10 @@
-package fr.epf.mm.gestionclient
+package fr.epf.mm.gestionFilm
 
 import android.text.Editable
-import com.google.gson.JsonObject
-import fr.epf.mm.gestionclient.model.Film
-import fr.epf.mm.gestionclient.model.listeFilm
+import fr.epf.mm.gestionFilm.model.Film
+import fr.epf.mm.gestionFilm.model.listeFilm
 import okhttp3.RequestBody
 import retrofit2.Call
-import retrofit2.Response
 import retrofit2.http.*
 
 interface FilmService {

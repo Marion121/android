@@ -1,19 +1,16 @@
-package fr.epf.mm.gestionclient
+package fr.epf.mm.gestionFilm
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.util.Log
-import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import fr.epf.mm.gestionclient.model.*
-import kotlinx.coroutines.runBlocking
+import fr.epf.mm.gestionFilm.model.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

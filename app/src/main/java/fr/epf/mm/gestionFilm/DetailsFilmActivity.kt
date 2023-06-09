@@ -1,4 +1,4 @@
-package fr.epf.mm.gestionclient
+package fr.epf.mm.gestionFilm
 
 import android.content.Context
 import android.content.Intent
@@ -6,8 +6,6 @@ import android.graphics.Bitmap
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
-import android.text.Editable
 import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.RelativeSizeSpan
@@ -16,15 +14,13 @@ import android.util.Log
 import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.gson.JsonObject
-import fr.epf.mm.gestionclient.model.Film
-import fr.epf.mm.gestionclient.model.listeFilm
+import fr.epf.mm.gestionFilm.model.Film
+import fr.epf.mm.gestionFilm.model.listeFilm
 import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback

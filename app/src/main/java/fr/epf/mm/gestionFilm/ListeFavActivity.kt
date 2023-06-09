@@ -1,18 +1,13 @@
-package fr.epf.mm.gestionclient
+package fr.epf.mm.gestionFilm
 
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import fr.epf.mm.gestionclient.model.listeFilm
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import fr.epf.mm.gestionFilm.model.listeFilm
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

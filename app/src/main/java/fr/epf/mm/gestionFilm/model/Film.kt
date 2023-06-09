@@ -1,9 +1,7 @@
-package fr.epf.mm.gestionclient.model
+package fr.epf.mm.gestionFilm.model
 
-import android.os.Parcel
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import kotlinx.parcelize.RawValue
 
 data class listeFilm(
         var page : Int,

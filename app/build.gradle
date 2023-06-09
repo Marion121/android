@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'fr.epf.mm.gestionclient'
+    namespace 'fr.epf.mm.gestionFilm'
     compileSdk 33
 
     defaultConfig {
-        applicationId "fr.epf.mm.gestionclient"
+        applicationId "fr.epf.mm.gestionFilm"
         minSdk 26
         targetSdk 33
         versionCode 1

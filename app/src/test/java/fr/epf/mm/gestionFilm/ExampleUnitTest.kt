@@ -1,4 +1,4 @@
-package fr.epf.mm.gestionclient
+package fr.epf.mm.gestionFilm
 
 import org.junit.Test
 

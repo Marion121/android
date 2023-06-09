@@ -1,4 +1,4 @@
-package fr.epf.mm.gestionclient
+package fr.epf.mm.gestionFilm
 
 import android.content.Context
 import android.content.Intent
@@ -11,7 +11,7 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.squareup.picasso.Picasso
-import fr.epf.mm.gestionclient.model.Film
+import fr.epf.mm.gestionFilm.model.Film
 
 class FilmViewHolder(val view: View) : ViewHolder(view)
 
