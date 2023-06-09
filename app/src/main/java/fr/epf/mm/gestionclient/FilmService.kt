@@ -17,6 +17,12 @@ interface FilmService {
 
     }
 
+    @GET("movie/{film_id}?api_key=$API_KEY")
+    fun getFilmDetails(
+        @Header("Authorization") authorization: String,
+        @Path("film_id") film_id: Int,
+    ): Call<Film>
+
     @GET("movie?api_key=$API_KEY")
     fun getFilm(@Query("query") movie: Editable): Call<listeFilm>
 

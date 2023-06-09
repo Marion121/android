@@ -17,23 +17,19 @@ data class Genre(
 )
 
 
-
 @Parcelize
 data class Film(
-   // @RawValue val genres: List<Genre>,
     var original_title : String,
     var overview : String,
     val adult: Boolean,
     // val backdrop_path: String,
     // val belongs_to_collection : Any?,
     val budget: Int,
-    val genre_ids: List<Int>,
     //val genres: List<Genre>,
     // val homepage : String,
     val id: Int,
     //  val imdb_id : String,
-    //  val imdb_id : String,
-    val original_language: String,
+    val original_language: String?,
     val popularity: Double,
     val poster_path: String,
     val release_date: String,
@@ -45,5 +41,5 @@ data class Film(
     //  val video: Boolean,
     val vote_average: Double,
     val vote_count: Int,
-    val favorite : Boolean
+    //val favorite : Boolean
     ) : Parcelable
